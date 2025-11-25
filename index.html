@@ -14,68 +14,73 @@
   <!-- Custom styles -->
   <style>
     body {
-  background-color: #f8f9fa;
-}
+      background-color: #f8f9fa;
+    }
 
-.hero {
-  background: linear-gradient(135deg, #e9f3ff, #fdf5ff);
-  border-radius: 0.75rem;
-  padding: 2rem;
-  margin-top: 2rem;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
-}
+    .hero {
+      background: linear-gradient(135deg, #e9f3ff, #fdf5ff);
+      border-radius: 0.75rem;
+      padding: 2rem;
+      margin-top: 2rem;
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+    }
 
-.section-title {
-  border-bottom: 2px solid #dee2e6;
-  padding-bottom: 0.25rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
-  color: #6c757d;
-}
+    .section-title {
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 0.25rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      color: #6c757d;
+    }
 
-.name-title {
-  font-size: 2rem;
-  font-weight: 700;
-}
+    .name-title {
+      font-size: 4rem;
+      font-weight: 700;
+    }
 
-.tagline {
-  color: #6c757d;
-}
+    .tagline {
+      color: #6c757d;
+    }
 
-/* Transparent box for contacts since hero is gradient */
-.contact-box {
-  background: transparent;
-  border-radius: 0.75rem;
-  padding: 0.9rem 1rem;
-  display: inline-block;
-  text-align: left;
-}
+    /* ↓↓↓ NEW CLASS: Tighter spacing for subtitle lines ↓↓↓ */
+    .tight-line {
+      margin-bottom: 0.2rem; 
+    }
+    /* ↑↑↑ */
 
-/* Frosted pill links */
-.contact-link {
-  display: block;
-  padding: 0.4rem 0.8rem;
-  border-radius: 999px;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(4px);
-  text-decoration: none;
-  font-size: 0.9rem;
-  color: #0d6efd;
-  border: 1px solid #d0e2ff;
-  transition: 0.2s;
-}
+    /* Transparent box for contacts since hero is gradient */
+    .contact-box {
+      background: transparent;
+      border-radius: 0.75rem;
+      padding: 0.9rem 1rem;
+      display: inline-block;
+      text-align: left;
+    }
 
-.contact-link + .contact-link {
-  margin-top: 0.4rem;
-}
+    /* Frosted pill links */
+    .contact-link {
+      display: block;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(4px);
+      text-decoration: none;
+      font-size: 0.9rem;
+      color: #0d6efd;
+      border: 1px solid #d0e2ff;
+      transition: 0.2s;
+    }
 
-.contact-link:hover {
-  background-color: rgba(255, 255, 255, 1);
-  text-decoration: none;
-}
+    .contact-link + .contact-link {
+      margin-top: 0.4rem;
+    }
 
+    .contact-link:hover {
+      background-color: rgba(255, 255, 255, 1);
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -97,9 +102,11 @@
         <!-- Name + Title -->
         <div class="col-md-8">
           <h1 class="name-title">Samantha L. Fernandez</h1>
-          <p class="tagline">Digital Initiatives Student Assistant at FIU Law Library</p>
-          <p class="tagline"> MS Engineering Managament Candidate</p>
-          <p class="tagline">BS Information Systems, Analytics minor</p> 
+
+          <!-- Updated taglines with tight spacing -->
+          <p class="tagline tight-line">Digital Initiatives Student Assistant at FIU Law Library</p>
+          <p class="tagline tight-line">MS Engineering Management Candidate</p>
+          <p class="tagline tight-line">BS Information Systems, Analytics minor</p> 
         </div>
 
         <!-- Photo + Contact Info -->
